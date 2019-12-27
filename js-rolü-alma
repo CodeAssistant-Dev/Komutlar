@@ -2,10 +2,10 @@ const Discord = require('discord.js');
 exports.run = async function(Csd, msg, args) {
     
             var role = msg.guild.roles.find(role => role.name === "🔰js");
-     //Coders Code 
+     //CSD's Code Server 
   if (msg.member.roles.has(role.id)) return msg.channel.send(`Zaten \`🔰js\` Adlı Rolün Var`)
   msg.member.addRole(role);
-      //Coders Code 
+      //CSD's Code Server
   msg.channel.send(` \`🔰js\` Adlı Rol Verildi.`);
 
 }
